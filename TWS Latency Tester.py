@@ -23,9 +23,9 @@ class BeatPlayer:
         self.play_btn.grid(row=2, column=0)
         self.stop_btn = tk.Button(master, text="Stop", command=self.stop_beat, state=tk.DISABLED)
         self.stop_btn.grid(row=2, column=1)
-        self.canvas = tk.Canvas(master, width=800, height=800)
+        self.canvas = tk.Canvas(master, width=700, height=700)
         self.canvas.grid(row=3, column=0, columnspan=2, pady=10)
-        self.rect = self.canvas.create_rectangle(0, 0, 800, 800, fill="black")
+        self.rect = self.canvas.create_rectangle(0, 0, 700, 700, fill="black")
         self.playing = False
         self.thread = None
 
